@@ -2,6 +2,44 @@
 
 Compare two prompts for the same meditation landing page and see how clear requirements change an AI-generated result.
 
+## Finished examples
+
+Both examples were generated in separate tasks using GPT-5.6 Terra with high
+reasoning effort. Their app code is preserved as generated for comparison.
+The vague example has placeholder session actions and invented marketing
+figures; the specific example implements a breathing timer. These are teaching
+demos, not production products or verified marketing claims.
+
+Use Node.js 22.12 or newer. Run these commands from the repository root in
+separate terminals:
+
+```sh
+cd examples/bad-prompt
+npm ci
+npm run dev -- --port 5181
+```
+
+```sh
+cd examples/good-prompt
+npm ci
+npm run dev -- --port 5182
+```
+
+Open http://localhost:5181 and http://localhost:5182 respectively.
+Both support `npm run build`; the good example also provides `npm test`.
+The bad example loads Google Fonts online, with fallback fonts when offline.
+
+### Captured screenshots
+
+| Vague prompt | Specific prompt |
+| --- | --- |
+| ![Vague prompt desktop](output/playwright/bad-desktop.png) | ![Specific prompt desktop](output/playwright/good-desktop.png) |
+| [Mobile screenshot](output/playwright/bad-mobile.png) | [Mobile screenshot](output/playwright/good-mobile.png) |
+
+[Breathing exercise screenshot](output/playwright/good-session.png).
+Desktop captures use a 1440px viewport; mobile captures use 375px.
+Both production builds and the existing timer test passed during collection.
+
 ## Try it in class
 
 1. Start two fresh projects in your coding tool using the same model.
