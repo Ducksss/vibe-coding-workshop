@@ -4,6 +4,22 @@ Compare two prompts for the same meditation landing page and see how clear requi
 
 ## Finished examples
 
+Live on Vercel:
+
+- [Bad-prompt demo](https://vibe-coding-workshop-bad.vercel.app)
+- [Good-prompt demo](https://vibe-coding-workshop-good.vercel.app)
+
+Each example is a separate Vercel project, deployed from its own folder with
+`vercel deploy --prod`. Deployments are manual; a Git push alone does not
+publish an update.
+
+Live verification: both URLs return HTTP 200 without login; both layouts fit
+a 375px mobile viewport. The good demo's two session buttons, pause, reset,
+five-second breathing cue change, and full countdown to zero passed browser
+checks. The bad demo's placeholder feedback was checked. Screenshots below
+were refreshed from these deployments. The bad demo has a harmless missing
+favicon request (404); its page and app assets load successfully.
+
 Both examples were generated in separate tasks using GPT-5.6 Terra with high
 reasoning effort. Their app code is preserved as generated for comparison.
 The vague example has placeholder session actions and invented marketing
