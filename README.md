@@ -21,7 +21,9 @@ were refreshed from these deployments. The bad demo has a harmless missing
 favicon request (404); its page and app assets load successfully.
 
 Both examples were generated in separate tasks using GPT-5.6 Terra with high
-reasoning effort. Their app code is preserved as generated for comparison.
+reasoning effort. The bad demo remains as generated. The good demo received a follow-up visual
+refinement at the instructor’s request; it is no longer a one-shot comparison.
+The original good demo is preserved in commit `38d2bbc`.
 The vague example has placeholder session actions and invented marketing
 figures; the specific example implements a breathing timer. These are teaching
 demos, not production products or verified marketing claims.

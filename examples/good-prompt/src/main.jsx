@@ -62,24 +62,25 @@ function App() {
       <section className="hero" id="top" aria-labelledby="hero-title">
         <div className="hero-copy">
           <p className="eyebrow"><span /> A pocket of quiet for students</p>
-          <h1 id="hero-title">A calmer mind,<br />one minute at a time.</h1>
+          <h1 id="hero-title">A calmer mind.<br /><em>One minute</em><br />at a time.</h1>
           <p className="lede">A short, guided pause for the space between everything else.</p>
           <button className="primary-button" onClick={beginSession}>Start a 1-minute break <span aria-hidden="true">→</span></button>
-          <p className="tiny-note">No account. No streaks. Just one minute.</p>
+
         </div>
 
         <div className="orb-scene" aria-label="A gently breathing circle" role="img">
+          <div className="scene-caption">A little room to breathe</div>
           <div className="orbit orbit-one" />
           <div className="orbit orbit-two" />
-          <div className="breath-orb"><span>inhale<br />slowly</span></div>
-          <p>find your stillness</p>
+          <div className="breath-orb"><span>just<br /><em>breathe.</em></span></div>
+          <p>Inhale for 5 seconds. Exhale for 5.</p>
         </div>
       </section>
 
       <section className="benefits" aria-labelledby="benefits-title">
         <div className="benefits-intro">
-          <p className="eyebrow"><span /> Made for the in-between</p>
-          <h2 id="benefits-title">A small pause can<br />change the next hour.</h2>
+          <p className="section-note">Made for the in-between</p>
+          <h2 id="benefits-title">Small pause.<br /><em>Fresh perspective.</em></h2>
         </div>
         <div className="benefit-list">
           {benefits.map(([number, title, copy]) => <article className="benefit" key={number}>
