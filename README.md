@@ -2,6 +2,11 @@
 
 Compare two prompts for the same meditation landing page and see how clear requirements change an AI-generated result.
 
+## Workshop slides
+
+Download [Intro to Vibe Coding — v4](output/Intro-to-Vibe-Coding-v4.pptx).
+Additional exported decks and demo screenshots are available in [output](output).
+
 ## Finished examples
 
 Live on Vercel:
