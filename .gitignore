@@ -4,3 +4,6 @@ dist/
 .playwright-cli/
 .playwright-mcp/
 .deck-build*/
+
+.vercel/
+.vercel

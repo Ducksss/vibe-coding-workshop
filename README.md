@@ -12,6 +12,12 @@ Turn an idea into a working app with AI, then check that it actually works.
 
 **Start with the slides, then follow examples 1 → 2 → 3.** You can explore the first two demos in your browser without installing anything.
 
+## Workshop landing page
+
+**[Open the workshop website](https://vibe-coding-workshop-nine.vercel.app)** · [Source and local preview](landing-page/README.md) · [Brand guide](landing-page/BRAND.md)
+
+A premium workshop page featuring an original animated sculpture processed with ASCII Magic, interactive video controls, and a visual branding guide.
+
 ## Slides
 
 **[Open the slides (PDF)](slides.pdf)** · [Download the PowerPoint](slides.pptx)

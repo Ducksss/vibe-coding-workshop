@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vibe Coding Workshop — The future is yours to build.</title>
+    <meta
+      name="description"
+      content="Turn an idea into a working app with AI. Explore the vibe coding workshop, demos and resources for the Edu2030 Vibe Hackathon."
+    />
+    <meta name="theme-color" content="#101110" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23d9ef83'/%3E%3Cpath d='m14 18 18 30 18-30M24 18l8 14 8-14' fill='none' stroke='%231e241f' stroke-width='6'/%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="premium">
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="header wrap">
+      <a
+        class="wordmark"
+        href="index.html"
+        aria-label="Vibe coding workshop home"
+        ><span class="mark" aria-hidden="true">v<span>↗</span></span
+        ><span
+          >vibe coding<span class="wordmark-sub"
+            >WORKSHOP / SINGAPORE</span
+          ></span
+        ></a
+      >
+      <nav aria-label="Main navigation">
+        <a href="#experience">The experience</a><a href="#host">Your host</a
+        ><a href="#toolkit">Your toolkit</a
+        ><a class="nav-cta" href="https://luma.com/wevny7a8"
+          >Event on Luma <span aria-hidden="true">↗</span></a
+        >
+      </nav>
+    </header>
+    <main id="main">
+      <section class="hero wrap" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="status-dot"></span> AN EDU2030 VIBE HACKATHON WORKSHOP
+          </p>
+          <h1 id="hero-title">
+            The future<br />is <span class="serif">yours</span><br />to
+            <span class="orange">build.</span>
+          </h1>
+          <p class="lede">
+            An idea. A prompt. Something real.<br />
+            A hands-on introduction to building with AI.<br />
+            For curious minds ready to make their first move.
+          </p>
+          <div class="hero-actions">
+            <a class="button dark" href="#toolkit"
+              >Start making <span aria-hidden="true">↗</span></a
+            ><a class="text-link" href="#experience"
+              >See what you’ll learn <span aria-hidden="true">↓</span></a
+            >
+          </div>
+          <p class="small-note">
+            <span aria-hidden="true">↳</span> Curiosity required. Coding
+            experience? Optional.
+          </p>
+          <a class="host-byline" href="#host">
+            <img
+              src="assets/chai-pin-zheng.jpg"
+              width="44"
+              height="44"
+              alt=""
+            />
+            <span
+              ><span class="mono">YOUR WORKSHOP HOST</span
+              ><strong
+                >Chai Pin Zheng <span aria-hidden="true">↗</span></strong
+              ></span
+            >
+          </a>
+        </div>
+        <div
+          class="ascii-studio"
+          aria-label="Interactive ASCII artwork experiment"
+        >
+          <div class="studio-top mono">
+            <span>EXPERIMENT 001 / THE POSSIBILITY KNOT</span
+            ><span class="studio-live">● LIVE STUDIO</span>
+          </div>
+          <div class="art-stage">
+            <video
+              id="knot-art"
+              width="720"
+              height="720"
+              muted
+              loop
+              playsinline
+              preload="metadata"
+              poster="assets/video-poster.png"
+              aria-label="A rotating silver knot sculpture rendered in ASCII characters"
+            >
+              <source src="assets/knot-ascii.mp4" type="video/mp4" /></video
+            ><span class="art-coordinate mono">X 01.30<br />Y 103.79</span
+            ><span class="art-caption mono"
+              >ONE IDEA.<br />INFINITE ITERATIONS.</span
+            >
+          </div>
+          <div class="studio-controls">
+            <div
+              class="mode-toggle"
+              role="group"
+              aria-label="Artwork treatment"
+            >
+              <button type="button" data-mode="ascii" aria-pressed="true">
+                ASCII</button
+              ><button type="button" data-mode="original" aria-pressed="false">
+                Original
+              </button>
+            </div>
+            <label class="tint-control"
+              ><span class="mono">PHOSPHOR</span
+              ><input
+                id="phosphor"
+                type="checkbox"
+                aria-label="Use green phosphor tint" /></label
+            ><button
+              id="play-art"
+              class="play-art"
+              type="button"
+              aria-label="Play sculpture animation"
+            >
+              Play</button
+            ><button
+              class="reset-art"
+              type="button"
+              aria-label="Reset artwork settings"
+            >
+              ↺
+            </button>
+          </div>
+          <div class="studio-credit mono">
+            <span>VIDEO → ASCII / MADE WITH ASCII MAGIC</span
+            ><a
+              href="https://www.ascii-magic.com/tools/video-to-ascii"
+              target="_blank"
+              rel="noopener noreferrer"
+              >MAKE YOUR OWN ↗</a
+            >
+          </div>
+          <noscript
+            ><p class="small-note">
+              Enable JavaScript to try the artwork controls, or open ASCII Magic
+              to experiment.
+            </p></noscript
+          >
+        </div>
+      </section>
+      <div class="event-strip">
+        <div class="wrap event-grid">
+          <div>
+            <span class="mono">01 / WHEN</span><strong>13 September 2026</strong
+            ><span>Sunday · 9 AM–4 PM SGT</span>
+          </div>
+          <div>
+            <span class="mono">02 / WHERE</span
+            ><strong>Ministry of Education</strong
+            ><span>Buona Vista, Singapore</span>
+          </div>
+          <div>
+            <span class="mono">03 / THE PEOPLE</span
+            ><strong>Students & young makers</strong
+            ><span>Come solo. Find your team.</span>
+          </div>
+          <div>
+            <span class="mono">04 / GOOD TO KNOW</span
+            ><strong>Free to take part</strong
+            ><span
+              >Registration is now closed
+              <span aria-hidden="true">↗</span></span
+            >
+          </div>
+        </div>
+      </div>
+      <section class="section wrap" id="experience">
+        <div class="section-intro">
+          <p class="eyebrow">01 / THE EXPERIENCE</p>
+          <h2>
+            You don’t need to know<br />everything to
+            <span class="serif">start something.</span>
+          </h2>
+          <p>
+            This is a workshop for doing. Bring an idea, learn how to guide AI,
+            and leave with a better sense of what you can make—and how to check
+            it.
+          </p>
+        </div>
+        <div class="lesson-grid">
+          <article class="lesson">
+            <span class="lesson-number mono">01 — DESCRIBE IT</span>
+            <div class="lesson-symbol prompt-symbol" aria-hidden="true">
+              [ <span>✦</span> ]
+            </div>
+            <h3>Turn a thought into a brief.</h3>
+            <p>
+              Give AI a purpose, an audience, and a clear finish line. See why a
+              specific prompt changes what you get back.
+            </p>
+            <span class="lesson-tag">GOOD QUESTIONS → BETTER BUILDS</span>
+          </article>
+          <article class="lesson">
+            <span class="lesson-number mono">02 — MAKE IT REAL</span>
+            <div class="lesson-symbol" aria-hidden="true">↗</div>
+            <h3>Build. Try. Change. Repeat.</h3>
+            <p>
+              Explore a working app, then improve it with focused follow-up
+              prompts. Small changes are how ideas get interesting.
+            </p>
+            <span class="lesson-tag">YOUR FIRST WORKING PROTOTYPE</span>
+          </article>
+          <article class="lesson">
+            <span class="lesson-number mono">03 — OWN THE RESULT</span>
+            <div class="lesson-symbol check-symbol" aria-hidden="true">✓</div>
+            <h3>Looks good? Check it works.</h3>
+            <p>
+              Click the buttons. Try the edge cases. Test it on a phone. Learn
+              to spot the difference between a nice mockup and a useful product.
+            </p>
+            <span class="lesson-tag">REAL TESTS. REAL CONFIDENCE.</span>
+          </article>
+        </div>
+      </section>
+      <section class="purpose">
+        <div class="wrap purpose-grid">
+          <div>
+            <p class="eyebrow">A SMALL BUILD. A BIGGER QUESTION.</p>
+            <h2>
+              What could education<br />look like
+              <span class="serif">if you built it?</span>
+            </h2>
+          </div>
+          <div>
+            <p>
+              The Edu2030 Vibe Hackathon brings young people together to
+              prototype ideas for Singapore’s education future. Hosted by
+              Reactor School, it pairs design sprint thinking with hands-on AI
+              building.
+            </p>
+            <a class="text-link" href="https://luma.com/wevny7a8"
+              >Explore the full event <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+      </section>
+      <section
+        class="section wrap host-section"
+        id="host"
+        aria-labelledby="host-title"
+      >
+        <div class="host-portrait">
+          <img
+            src="assets/chai-pin-zheng.jpg"
+            width="457"
+            height="457"
+            loading="lazy"
+            alt="Chai Pin Zheng, your vibe coding workshop host"
+          />
+          <span class="mono portrait-caption"
+            >A FELLOW BUILDER. YOUR GUIDE FOR THE DAY.</span
+          >
+        </div>
+        <div class="host-bio">
+          <p class="eyebrow">02 / MEET YOUR WORKSHOP HOST</p>
+          <h2 id="host-title">Chai <span class="serif">Pin Zheng.</span></h2>
+          <p class="host-role">NUS Computer Science · Reactor School</p>
+          <p>
+            Chai is a computer science student at NUS, currently with Reactor
+            School. He’ll guide you through turning a prompt into a working app,
+            improving it step by step, and checking what you’ve built.
+          </p>
+          <p>
+            Bring your questions and your half-formed ideas. This session is
+            about getting hands-on and learning as you make.
+          </p>
+          <div class="host-links">
+            <a class="text-link" href="https://www.chai-pin-zheng.xyz/"
+              >Meet Chai <span aria-hidden="true">↗</span></a
+            ><a class="text-link" href="https://github.com/Ducksss"
+              >GitHub <span aria-hidden="true">↗</span></a
+            ><a
+              class="text-link"
+              href="https://www.linkedin.com/in/chai-pin-zheng/"
+              >LinkedIn <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+        <dl class="host-credits">
+          <div>
+            <dt class="mono">EVENT ORGANISER</dt>
+            <dd>
+              <a href="https://luma.com/reactor.school"
+                >Reactor School <span aria-hidden="true">↗</span></a
+              >
+            </dd>
+          </div>
+          <div>
+            <dt class="mono">WEEKEND PROGRAMME PARTNER</dt>
+            <dd>
+              <a href="https://luma.com/1g4iwyst"
+                >MAJU <span aria-hidden="true">↗</span></a
+              >
+            </dd>
+          </div>
+          <div>
+            <dt class="mono">VENUE</dt>
+            <dd>Ministry of Education</dd>
+          </div>
+        </dl>
+      </section>
+      <section class="section wrap toolkit" id="toolkit">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">03 / THE TAKE-HOME TOOLKIT</p>
+            <h2>
+              Your next tab.<br /><span class="serif">Your first step.</span>
+            </h2>
+          </div>
+          <p>
+            Keep the momentum going.<br />Open the slides, explore the
+            examples,<br />then make something your own.
+          </p>
+        </div>
+        <div class="resource-list">
+          <a
+            href="https://github.com/Ducksss/vibe-coding-workshop/blob/main/slides.pdf"
+            ><span class="resource-index mono">01</span>
+            <div>
+              <h3>The workshop slides</h3>
+              <p>The ideas, examples, and prompts—all in one place.</p>
+            </div>
+            <span class="resource-type mono">READ / PDF</span
+            ><span class="resource-arrow" aria-hidden="true">↗</span></a
+          ><a href="https://vibe-coding-workshop-bad.vercel.app"
+            ><span class="resource-index mono">02</span>
+            <div>
+              <h3>A vague prompt. A convincing page.</h3>
+              <p>Try the first demo. Do the buttons do what you expect?</p>
+            </div>
+            <span class="resource-type mono">EXPLORE / DEMO 01</span
+            ><span class="resource-arrow" aria-hidden="true">↗</span></a
+          ><a href="https://vibe-coding-workshop-good.vercel.app"
+            ><span class="resource-index mono">03</span>
+            <div>
+              <h3>A better prompt. A working experience.</h3>
+              <p>Try a breathing exercise built from a more specific brief.</p>
+            </div>
+            <span class="resource-type mono">EXPLORE / DEMO 02</span
+            ><span class="resource-arrow" aria-hidden="true">↗</span></a
+          ><a href="https://github.com/Ducksss/vibe-coding-workshop"
+            ><span class="resource-index mono">04</span>
+            <div>
+              <h3>Take it apart. Make it yours.</h3>
+              <p>Get the source code, setup guide, and student perks.</p>
+            </div>
+            <span class="resource-type mono">BUILD / GITHUB</span
+            ><span class="resource-arrow" aria-hidden="true">↗</span></a
+          >
+        </div>
+      </section>
+      <section class="faq-section wrap">
+        <div>
+          <p class="eyebrow">04 / BEFORE YOU DIVE IN</p>
+          <h2>Good questions.</h2>
+          <p>Here are a few to get you started.</p>
+        </div>
+        <div class="faqs">
+          <details>
+            <summary>
+              Do I need to know how to code?<span aria-hidden="true">+</span>
+            </summary>
+            <p>
+              No prior technical skills are needed. The workshop starts with the
+              basics of guiding AI and checking its output.
+            </p>
+          </details>
+          <details>
+            <summary>
+              Who is the event for?<span aria-hidden="true">+</span>
+            </summary>
+            <p>
+              The event’s eligibility section lists ages 15–25: students in
+              Singapore and young working adults. See Luma for the organiser’s
+              full eligibility details.
+            </p>
+          </details>
+          <details>
+            <summary>
+              Can I come without a team?<span aria-hidden="true">+</span>
+            </summary>
+            <p>
+              Yes. Join individually or with friends; teams of 3–4 form around
+              shared interests at the hackathon.
+            </p>
+          </details>
+          <details>
+            <summary>
+              How do I get ready to build?<span aria-hidden="true">+</span>
+            </summary>
+            <p>
+              You can open both demos right in your browser. To edit the code,
+              follow the
+              <a
+                href="https://github.com/Ducksss/vibe-coding-workshop#run-an-example-on-your-laptop"
+                >laptop setup guide</a
+              >. The examples need no API key or paid subscription.
+            </p>
+          </details>
+          <details>
+            <summary>
+              Can I still register?<span aria-hidden="true">+</span>
+            </summary>
+            <p>
+              Registration is closed on Luma. Visit the
+              <a href="https://luma.com/wevny7a8">event page</a> to contact the
+              host or follow updates. The workshop resources remain available
+              here.
+            </p>
+          </details>
+        </div>
+      </section>
+      <section class="closing wrap">
+        <span class="closing-star" aria-hidden="true">✳</span>
+        <p class="eyebrow">THE BEST WAY TO LEARN IS TO MAKE.</p>
+        <h2>
+          Less “what if.”<br />More <span class="serif">“I made this.”</span>
+        </h2>
+        <a class="button dark" href="#toolkit"
+          >Open your toolkit <span aria-hidden="true">↗</span></a
+        >
+        <p class="closing-note">Start small. Stay curious. Build something.</p>
+      </section>
+    </main>
+    <footer class="wrap footer">
+      <a class="wordmark" href="index.html"
+        ><span class="mark" aria-hidden="true">v<span>↗</span></span
+        ><span
+          >vibe coding<span class="wordmark-sub"
+            >IDEAS ARE JUST THE BEGINNING.</span
+          ></span
+        ></a
+      >
+      <div>
+        <a href="brand.html">The brand guide ↗</a
+        ><a href="https://luma.com/wevny7a8">Event details ↗</a
+        ><a href="https://github.com/Ducksss/vibe-coding-workshop">GitHub ↗</a>
+      </div>
+      <p>Made for the makers. Singapore, 2026.</p>
+    </footer>
+    <script src="studio.js" defer></script>
+  </body>
+</html>
