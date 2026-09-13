@@ -4,7 +4,7 @@ A responsive founder dinner interest page with a real Three.js WebGL dinner menu
 
 ## Run
 
-Requires Node.js 22 or newer.
+Use Node.js 22.12 or newer for consistency with the other workshop examples.
 
 ```sh
 cd examples/interactive-demo
@@ -12,7 +12,7 @@ npm ci
 npm run dev
 ```
 
-Open http://localhost:5183. Run `npm test` for the API integration check.
+Open http://localhost:5183. Stop with `Ctrl+C`. `npm start` runs the same server; there is no build or preview command. Run `npm test` for the API integration check, which creates and removes its own temporary data directory.
 
 ## Interest list
 
@@ -50,3 +50,58 @@ The ivory-and-olive palette now uses a consistent typography and spacing system,
 ![Desktop preview](previews/desktop.png)
 
 [Mobile preview](previews/mobile.png).
+
+## Configuration
+
+| Variable | Default | Purpose |
+| --- | --- | --- |
+| `PORT` | `5183` | HTTP port; the server listens on `127.0.0.1` |
+| `DATA_DIR` | `data/` beside `server.mjs` | Writable directory containing `interest.jsonl`; use an absolute path when overriding |
+
+For example, from this demo folder on macOS/Linux:
+
+```sh
+PORT=5184 DATA_DIR="$PWD/data" npm start
+```
+
+Environment variables are read directly from the process; the server does not load a `.env` file. The supplied browser check uses port 5183, so use the default port for that check.
+
+## Form API
+
+`POST /api/interest` accepts `Content-Type: application/json` with these fields:
+
+| Field | Requirement |
+| --- | --- |
+| `name` | Nonblank string, at most 100 characters |
+| `email` | Nonblank string matching the server’s email format check, at most 254 characters |
+| `company` | Nonblank string, at most 200 characters; the form labels it “What are you building?” |
+| `city` | Nonblank string, at most 100 characters |
+| `topic` | Optional string, at most 1,000 characters |
+| `consent` | Boolean `true` |
+
+String lengths are checked before trimming. Successful records include a generated `id` and ISO `createdAt` timestamp. Each accepted submission appends a new record; there is no deduplication or invitation workflow.
+
+| Response | Meaning |
+| --- | --- |
+| `201` with `{"saved":true}` | Record appended successfully |
+| `400` | Invalid JSON, invalid fields, or missing consent |
+| `403` | Supplied Origin does not match the request host |
+| `413` | Request body exceeds 8,192 bytes |
+| `415` | Content type is not JSON |
+| `500` | Server could not save the record |
+
+The browser disables the submit button while saving, clears the form after success, and preserves entered details after a failure. Use fictional data for classroom submissions. Access the JSONL file locally to review records; the server has no list/export endpoint and does not serve the data directory.
+
+## Source guide
+
+- `index.html`: page copy, sample disclosures, form, and FAQ.
+- `style.css`: layout, responsive styles, motion, and CSS menu fallback.
+- `app.js`: form requests, reveal effects, scene loading, and parallax.
+- `scene.js`: Three.js menu, pointer interaction, and rendering lifecycle.
+- `server.mjs`: allowed static routes, API validation, and file storage.
+- `test.mjs`: API integration check.
+- `browser-check.js`: browser assertions; it simulates a failed form request without saving a registration.
+
+The browser check requires WebGL to render successfully; a headless environment without GPU support may show the valid CSS fallback while failing that assertion. The fallback is not a substitute for verifying the 3D scene in a capable browser.
+
+[Back to the workshop](../../README.md)
