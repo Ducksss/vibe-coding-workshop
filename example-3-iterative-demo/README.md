@@ -1,4 +1,4 @@
-# Interactive demo — The Founder’s Table
+# Example 3 — Iterative demo
 
 A responsive founder dinner interest page with a real Three.js WebGL dinner menu, gentle animation, reduced-motion support, accessible form fields, and real server-side registration storage. Three.js is the only dependency. No build step.
 
@@ -7,7 +7,7 @@ A responsive founder dinner interest page with a real Three.js WebGL dinner menu
 Use Node.js 22.12 or newer for consistency with the other workshop examples.
 
 ```sh
-cd examples/interactive-demo
+cd example-3-iterative-demo
 npm ci
 npm run dev
 ```
@@ -47,9 +47,9 @@ The ivory-and-olive palette now uses a consistent typography and spacing system,
 
 ## Preview
 
-![Desktop preview](previews/desktop.png)
+![Desktop preview](desktop.png)
 
-[Mobile preview](previews/mobile.png).
+[Mobile preview](mobile.png).
 
 ## Configuration
 
@@ -104,4 +104,4 @@ The browser disables the submit button while saving, clears the form after succe
 
 The browser check requires WebGL to render successfully; a headless environment without GPU support may show the valid CSS fallback while failing that assertion. The fallback is not a substitute for verifying the 3D scene in a capable browser.
 
-[Back to the workshop](../../README.md)
+[Back to the workshop](../README.md)

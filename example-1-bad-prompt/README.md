@@ -1,4 +1,4 @@
-# Still — vague-prompt example
+# Example 1 — Bad prompt
 
 A React, Tailwind CSS, and Vite meditation landing page generated from an intentionally open-ended prompt:
 
@@ -12,7 +12,7 @@ Make it look nice and modern. Add some animations.
 Use Node.js 22.12 or newer. From the repository root:
 
 ```sh
-cd examples/bad-prompt
+cd example-1-bad-prompt
 npm ci
 npm run dev -- --port 5181
 ```
@@ -40,10 +40,10 @@ Google Fonts require a network connection; fallback fonts are available. Inspect
 - `package.json`: dependencies and available commands.
 - `vite.config.js`: development and build configuration.
 
-Keep this example as the comparison baseline. Try your first edits in the [specific-prompt example](../good-prompt/README.md).
+Keep this example as the comparison baseline. Try your first edits in the [specific-prompt example](../example-2-good-prompt/README.md).
 
 ## Check it
 
 Build the app, then check navigation, both primary buttons, all three session messages, and the mobile menu in a browser. At 375px, check readable content and horizontal overflow. Treat unspecified functionality as a discussion point about the prompt, not as a failure to satisfy it.
 
-[Live demo](https://vibe-coding-workshop-bad.vercel.app) · [Workshop prompts and comparison](../../README.md)
+[Live demo](https://vibe-coding-workshop-bad.vercel.app) · [Workshop prompts and comparison](../README.md)
