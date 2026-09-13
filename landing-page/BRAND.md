@@ -1,4 +1,4 @@
-# Vibe Coding Workshop — Brand guide
+# Singapore Vibe Coding Workshop — Brand guide
 
 ## Concept
 Human curiosity. Machine possibility. A premium creative-studio identity for first-time AI builders, centred on an original knot sculpture translated into ASCII characters.
@@ -66,3 +66,7 @@ Regenerate the original looping source with `python3 assets/make-knot.py` (Pillo
 The host photo is Chai Pin Zheng's public GitHub avatar, saved locally as `assets/chai-pin-zheng.jpg` from https://avatars.githubusercontent.com/u/58126222?v=4 . Name and public bio are sourced from https://github.com/Ducksss. Keep the photo in its original colour and use a small circular crop in the hero and a square portrait in the host section.
 
 Chai is credited as workshop host at his request. Reactor School is the Edu2030 event organiser, MAJU the weekend programme partner, and Ministry of Education the venue, based on the linked Luma listings. Do not imply venue sponsorship or invent job titles.
+
+## Public name and address
+
+Use **Singapore Vibe Coding Workshop** as the page and search identity. The concise visual wordmark remains “vibe coding,” with Singapore identified in the nearby workshop label. Primary address: https://singapore-vibe-coding-workshop.vercel.app . Use this address for shared links and canonical metadata. Short aliases redirect to this address.

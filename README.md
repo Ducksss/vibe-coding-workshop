@@ -14,7 +14,7 @@ Turn an idea into a working app with AI, then check that it actually works.
 
 ## Workshop landing page
 
-**[Open the workshop website](https://vibe-coding-workshop-nine.vercel.app)** · [Source and local preview](landing-page/README.md) · [Brand guide](landing-page/BRAND.md)
+**[Open the workshop website](https://singapore-vibe-coding-workshop.vercel.app)** · [Source and local preview](landing-page/README.md) · [Brand guide](landing-page/BRAND.md)
 
 A premium workshop page featuring an original animated sculpture processed with ASCII Magic, interactive video controls, and a visual branding guide.
 

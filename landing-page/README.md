@@ -1,6 +1,6 @@
 # Workshop landing page
 
-**[Live website](https://vibe-coding-workshop-nine.vercel.app)** · [Visual brand guide](https://vibe-coding-workshop-nine.vercel.app/brand.html)
+**[Live website](https://singapore-vibe-coding-workshop.vercel.app)** · [Visual brand guide](https://singapore-vibe-coding-workshop.vercel.app/brand.html)
 
 A standalone, responsive landing page with an original premium identity and an artwork exported from ASCII Magic. Existing workshop examples are unchanged.
 
@@ -36,4 +36,10 @@ Browser smoke check: compare Original and ASCII; toggle Phosphor; Reset restores
 
 Vercel project: `vibe-coding-workshop` in `ducksss-projects`, connected to `Ducksss/vibe-coding-workshop` on GitHub. The production branch is `main`, root directory is `landing-page`, framework is Other, build/install commands are empty, and output directory is `.`. Pushes to `main` deploy the static page automatically. Existing example deployments are separate projects.
 
-GitHub's About website points to https://vibe-coding-workshop-nine.vercel.app . The `.vercel/` directory contains local linking metadata and is ignored by Git.
+GitHub's About website points to https://singapore-vibe-coding-workshop.vercel.app . The `.vercel/` directory contains local linking metadata and is ignored by Git.
+
+### Public addresses
+
+Primary: https://singapore-vibe-coding-workshop.vercel.app
+
+The shorter `singapore-vibe-coding.vercel.app` and `vibe-coding-singapore.vercel.app` addresses redirect permanently (308) to the primary address. The original `vibe-coding-workshop-nine.vercel.app` address redirects there too. All are free Vercel subdomains attached to the same project and follow production deployments.
