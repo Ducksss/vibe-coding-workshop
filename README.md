@@ -58,6 +58,25 @@ The bad example loads Google Fonts online, with fallback fonts when offline.
 Desktop captures use a 1440px viewport; mobile captures use 375px.
 Both production builds and the existing timer test passed during collection.
 
+## Interactive demo — The Founder’s Table
+
+A founder dinner landing page developed through iterative prompting, with a
+Three.js menu, scroll parallax, responsive layouts, and a working interest form.
+See [the demo folder](examples/interactive-demo) for the improved prompt,
+setup instructions, privacy/storage details, and browser checks.
+
+```sh
+cd examples/interactive-demo
+npm ci
+npm run dev
+```
+
+Open http://localhost:5183. Run `npm test` for the API checks. This demo runs
+locally; the existing Vercel links above point to the meditation examples.
+Testimonials, event totals, and menu dishes are explicitly marked as samples.
+
+![Founder’s Table preview](examples/interactive-demo/previews/desktop.png)
+
 ## Try it in class
 
 1. Start two fresh projects in your coding tool using the same model.
